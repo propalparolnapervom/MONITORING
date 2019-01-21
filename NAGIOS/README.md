@@ -60,3 +60,17 @@ Nagios uses the results from the plugins to determine the current status of the 
     - These plugins will send information to the Scheduler, which displays that in a GUI
 
 ![arch](https://github.com/propalparolnapervom/OVERALL/blob/master/Pictures/monitoring/nagios/nagions_architecture.png "arch")
+
+_____
+
+**NRPE (Nagios Remote Plugin Executor)** addon is designed to allow you to execute Nagios plugins on remote Linux/Unix machines. 
+
+The main reason for doing this is to allow Nagios to monitor “local” resources (like CPU load, memory usage, etc.) on remote machines. 
+
+Since these public resources are not usually exposed to external machines, an agent like NRPE must be installed on the remote Linux/Unix machines.
+
+![nrpe](https://github.com/propalparolnapervom/OVERALL/blob/master/Pictures/monitoring/nagios/nagios_nrpe.png "nrpe")
+
+    - The check_nrpe plugin, resides on the local monitoring machine.
+    - The NRPE daemon, runs on the remote Linux/Unix machine.
+    - There is a SSL (Secure Socket Layer) connection between monitoring host and remote host as shown in the diagram above.
