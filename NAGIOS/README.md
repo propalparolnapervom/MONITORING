@@ -53,6 +53,14 @@ Nagios uses the results from the plugins to determine the current status of the 
 
 ## ARCHITECTURE
 
+Three important components of Nagios architecture are:
+    1) Web Interface (GUI)
+    2)Nagios Server
+    3)Plugin
+
+
+In general:
+
     - Nagios is built on a server/agents architecture.
 
     - Usually, on a network, a Nagios server is running on a host, and Plugins interact with local and all the remote hosts that need to be monitored.
@@ -71,6 +79,6 @@ Since these public resources are not usually exposed to external machines, an ag
 
 ![nrpe](https://github.com/propalparolnapervom/OVERALL/blob/master/Pictures/monitoring/nagios/nagios_nrpe.png "nrpe")
 
-    - The check_nrpe plugin, resides on the local monitoring machine.
-    - The NRPE daemon, runs on the remote Linux/Unix machine.
+    - The `check_nrpe` plugin - resides on the local monitoring machine.
+    - The `NRPE` daemon- runs on the remote Linux/Unix machine.
     - There is a SSL (Secure Socket Layer) connection between monitoring host and remote host as shown in the diagram above.
