@@ -54,17 +54,15 @@ Nagios uses the results from the plugins to determine the current status of the 
 ## ARCHITECTURE
 
 Three important components of Nagios architecture are:
-    1) Web Interface (GUI)
-    2)Nagios Server
-    3)Plugin
+  1) Web Interface (GUI)
+  2) Nagios Server
+  3) Plugin
 
 
 In general:
 
     - Nagios is built on a server/agents architecture.
-
     - Usually, on a network, a Nagios server is running on a host, and Plugins interact with local and all the remote hosts that need to be monitored.
-
     - These plugins will send information to the Scheduler, which displays that in a GUI
 
 ![arch](https://github.com/propalparolnapervom/OVERALL/blob/master/Pictures/monitoring/nagios/nagions_architecture.png "arch")
