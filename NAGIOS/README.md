@@ -4,6 +4,8 @@
 
 [Tutorial 2](https://www.edureka.co/blog/nagios-tutorial/)
 
+[Official Training 1](https://library.nagios.com/training/selfpaced/topics/)
+
 ## CONTINUOUS MONITORING
 
 **Continuous Monitoring** Tools resolve any system errors (low memory, unreachable server etc) before they have any negative impact on your business productivity.
@@ -80,3 +82,23 @@ Since these public resources are not usually exposed to external machines, an ag
     - The `check_nrpe` plugin - resides on the local monitoring machine.
     - The `NRPE` daemon- runs on the remote Linux/Unix machine.
     - There is a SSL (Secure Socket Layer) connection between monitoring host and remote host as shown in the diagram above.
+
+
+## OBJECTS
+
+[Object Definitions](https://assets.nagios.com/downloads/nagioscore/docs/nagioscore/4/en/objectdefinitions.html)
+
+[Object Configuration Overview](https://assets.nagios.com/downloads/nagioscore/docs/nagioscore/4/en/configobject.html)
+
+Objects are all the elements that are involved in the monitoring and notification logic. Types of objects include:
+
+  - Services
+  - Service Groups
+  - Hosts
+  - Host Groups
+  - Contacts
+  - Contact Groups
+  - Commands
+  - Time Periods
+  - Notification Escalations
+  - Notification and Execution Dependencies
