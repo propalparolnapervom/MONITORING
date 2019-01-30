@@ -1,7 +1,8 @@
-# COMMANDS (UBUNTU)
+# README
 
-Different Linux distributions have different methods of starting / stopping / restarting / status Nagios.
 
+
+## Bounce Nagios
 ```
 ===== Ubuntu 14.x =====
 
@@ -18,3 +19,10 @@ sudo systemctl stop nagios.service
 sudo systemctl restart nagios.service
 sudo systemctl status nagios.service
 ```
+
+
+## Debug config files
+```
+sudo /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+```
+
