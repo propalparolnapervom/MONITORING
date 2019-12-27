@@ -7,6 +7,12 @@ Start process
 /usr/local/bin/prometheus --config.file prometheus.yml
 ```
 
+Apply changes in `prometheus.yml` config file, via prometheus process re-start
+```
+service prometheus restart
+service prometheus status
+```
+
 Apply changes in `prometheus.yml` config file, with no prometheus process re-start
 ```
 kill -SIGHUB <prometheus_process_id>
