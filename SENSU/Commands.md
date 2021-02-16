@@ -41,5 +41,13 @@ sensuctl api-key revoke <api_key> --skip-confirm
 ```
 
 
+## API: Work
+
+### Get
+
+```
+curl -H "Authorization: Key <api_key>" http://<server>:8080/api/core/v2/namespaces/default/checks
+```
+
 
 
