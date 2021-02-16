@@ -2,15 +2,12 @@
 
 
 
-## API
+## API: Auth
 
 [Use API keys to authenticate to Sensu](https://docs.sensu.io/sensu-go/latest/operations/control-access/use-apikeys/)
 
 
-### API key authentication
-
-
-#### Generate
+### Generate
 
 Generate a new API key for the admin user
 ```
@@ -18,7 +15,7 @@ sensuctl api-key grant admin
 ```
 
 
-#### List
+### List
 
 
 List all API keys
@@ -27,7 +24,7 @@ sensuctl api-key list
 ```
 
 
-#### Describe
+### Describe
 
 To get information about an API key
 ```
@@ -36,7 +33,7 @@ sensuctl api-key info <api_key> --format json
 ```
 
 
-#### Revoke
+### Revoke
 
 To revoke an API key for the admin user
 ```
